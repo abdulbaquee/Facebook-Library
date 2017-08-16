@@ -44,7 +44,7 @@ if (isset($token['access_token']))
 
 ```
 user.php
-
+session_start();
 $token = $_SESSION['access_token'];
 $request_data = array(
     'access_token' => $token,
