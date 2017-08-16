@@ -26,7 +26,7 @@ callback.php
 
 session_start();
 include './config.php';
-include './libraries/Facebook.php';
+include './src/Facebook.php';
 $fb = new Facebook($config);
 $code = filter_input(INPUT_GET, 'code', FILTER_DEFAULT);
 if (empty($code))
